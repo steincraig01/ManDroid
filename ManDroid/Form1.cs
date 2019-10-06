@@ -1,6 +1,5 @@
 ﻿using RegawMOD.Android;
 using System;
-using System.Collections.Generic;
 using System.ComponentModel;
 using System.Drawing;
 using System.Management;
@@ -33,8 +32,8 @@ namespace ManDroid.ManDroid
             {
                 foreach (var managementBaseObject in managementObjectCollection)
                 {
-                    if (managementBaseObject["Caption"] != null && managementBaseObject["Caption"].ToString().Contains("9008"))
-                        listBoxControl1.Items.Add(managementBaseObject.GetPropertyValue("DeviceID"));
+                    if (managementBaseObject["Caption"] != null && managementBaseObject["DeviceID"].ToString().Contains("USB\\"))
+                        listBoxControl1.Items.Add(managementBaseObject.GetPropertyValue("Caption"));
                     else if (managementBaseObject["Caption"] == null)
                         listBoxControl1.Items.Add("nope");
                 }
@@ -47,8 +46,6 @@ namespace ManDroid.ManDroid
 
             managementObjectCollection.Dispose();
         }
-
-        private List<GridCell> cells = new List<GridCell>();
 
         public class GridCell
         {
