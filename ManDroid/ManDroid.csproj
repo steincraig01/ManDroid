@@ -1,6 +1,7 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
 <Project ToolsVersion="4.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
   <PropertyGroup>
+    <OptionInfer>On</OptionInfer>
     <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
     <Platform Condition=" '$(Platform)' == '' ">x86</Platform>
     <ProductVersion>8.0.30703</ProductVersion>
@@ -12,6 +13,7 @@
     <AssemblyName>ManDroid</AssemblyName>
     <TargetFrameworkVersion>v4.6</TargetFrameworkVersion>
     <FileAlignment>512</FileAlignment>
+    <DefaultItemExcludes>$(DefaultItemExcludes);$(ProjectDir)**\*.vb</DefaultItemExcludes>
   </PropertyGroup>
   <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
     <PlatformTarget>AnyCPU</PlatformTarget>
@@ -33,15 +35,25 @@
     <WarningLevel>4</WarningLevel>
   </PropertyGroup>
   <ItemGroup>
+    <Reference Include="AndroidLib">
+      <HintPath>.\AndroidLib.dll</HintPath>
+    </Reference>
     <Reference Include="DevExpress.BonusSkins.v18.2" />
     <Reference Include="DevExpress.Data.v18.2" />
+    <Reference Include="DevExpress.Images.v18.2, Version=18.2.3.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a" />
     <Reference Include="DevExpress.Utils.v18.2" />
     <Reference Include="DevExpress.Sparkline.v18.2.Core" />
     <Reference Include="DevExpress.XtraBars.v18.2, Version=18.2.3.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL" />
     <Reference Include="DevExpress.XtraEditors.v18.2" />
     <Reference Include="DevExpress.Printing.v18.2.Core" />
+    <Reference Include="DevExpress.XtraGrid.v18.2, Version=18.2.3.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL" />
+    <Reference Include="DevExpress.XtraLayout.v18.2, Version=18.2.3.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL" />
+    <Reference Include="DevExpress.XtraPrinting.v18.2, Version=18.2.3.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a" />
+    <Reference Include="DevExpress.XtraTreeList.v18.2, Version=18.2.3.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL" />
+    <Reference Include="Microsoft.VisualBasic" />
     <Reference Include="System" />
     <Reference Include="System.Core" />
+    <Reference Include="System.Management" />
     <Reference Include="System.Xml.Linq" />
     <Reference Include="System.Data.DataSetExtensions" />
     <Reference Include="Microsoft.CSharp" />
@@ -52,6 +64,7 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Class1.cs" />
     <Compile Include="Form1.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -63,15 +76,19 @@
     <EmbeddedResource Include="Form1.resx">
       <DependentUpon>Form1.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="Properties\licenses.licx" />
     <EmbeddedResource Include="Properties\Resources.resx">
-      <Generator>ResXFileCodeGenerator</Generator>
+      <Generator>PublicResXFileCodeGenerator</Generator>
       <LastGenOutput>Resources.Designer.cs</LastGenOutput>
       <SubType>Designer</SubType>
     </EmbeddedResource>
     <Compile Include="Properties\Resources.Designer.cs">
       <AutoGen>True</AutoGen>
       <DependentUpon>Resources.resx</DependentUpon>
+      <DesignTime>True</DesignTime>
     </Compile>
+    <None Include="App.config" />
+    <None Include="Properties\DataSources\EventRecord.datasource" />
     <None Include="Properties\Settings.settings">
       <Generator>SettingsSingleFileGenerator</Generator>
       <LastGenOutput>Settings.Designer.cs</LastGenOutput>
@@ -81,6 +98,75 @@
       <DependentUpon>Settings.settings</DependentUpon>
       <DesignTimeSharedInput>True</DesignTimeSharedInput>
     </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\cancel_32x32.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\electronics_tabletmac.svg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\actions_info.svg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\about_16x16.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\add_16x16.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\apply_16x16.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\cancel_16x16.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\changeview_16x16.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\close_16x16.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\phone_16x16.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\iconsetredtoblack4_16x16.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\iconsetsigns3_16x16.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\iconsetsymbols3_16x16.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\customization_16x16.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\index_16x16.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\info_16x16.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\ide_16x16.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\properties_16x16.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\removepivotfield_16x16.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\error_16x16.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\warning_16x16.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\info_16x161.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\agendaview.svg" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it.

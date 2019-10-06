@@ -6,21 +6,18 @@ using DevExpress.UserSkins;
 using DevExpress.Skins;
 using DevExpress.LookAndFeel;
 
-namespace ManDroid
+namespace ManDroid.ManDroid
 {
-    static class Program
+    internal static class Program
     {
-        /// <summary>
-        /// The main entry point for the application.
-        /// </summary>
         [STAThread]
-        static void Main()
+        private static void Main()
         {
             Application.EnableVisualStyles();
             Application.SetCompatibleTextRenderingDefault(false);
-
             BonusSkins.Register();
             Application.Run(new Form1());
         }
     }
 }
+

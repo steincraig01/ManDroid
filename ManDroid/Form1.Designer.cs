@@ -1,129 +1,474 @@
-﻿namespace ManDroid
+﻿using System;
+
+namespace ManDroid.ManDroid
 {
-    partial class Form1
+    internal partial class Form1
     {
-        /// <summary>
-        /// Required designer variable.
-        /// </summary>
         private System.ComponentModel.IContainer components = null;
 
-        /// <summary>
-        /// Clean up any resources being used.
-        /// </summary>
-        /// <param name="disposing">true if managed resources should be disposed; otherwise, false.</param>
         protected override void Dispose(bool disposing)
         {
-            if (disposing && (components != null))
-            {
+            if (disposing && components != null)
                 components.Dispose();
-            }
+
             base.Dispose(disposing);
         }
 
-        #region Windows Form Designer generated code
-
-        /// <summary>
-        /// Required method for Designer support - do not modify
-        /// the contents of this method with the code editor.
-        /// </summary>
         private void InitializeComponent()
         {
-            DevExpress.XtraEditors.TileItemElement tileItemElement1 = new DevExpress.XtraEditors.TileItemElement();
-            DevExpress.XtraEditors.TileItemElement tileItemElement2 = new DevExpress.XtraEditors.TileItemElement();
-            DevExpress.XtraEditors.TileItemElement tileItemElement3 = new DevExpress.XtraEditors.TileItemElement();
-            DevExpress.XtraEditors.TileItemElement tileItemElement4 = new DevExpress.XtraEditors.TileItemElement();
-            DevExpress.XtraEditors.TileItemElement tileItemElement5 = new DevExpress.XtraEditors.TileItemElement();
-            this.tileBar1 = new DevExpress.XtraBars.Navigation.TileBar();
-            this.tileBarGroup2 = new DevExpress.XtraBars.Navigation.TileBarGroup();
-            this.tileBarItem1 = new DevExpress.XtraBars.Navigation.TileBarItem();
-            this.tileBarItem2 = new DevExpress.XtraBars.Navigation.TileBarItem();
-            this.tileBarItem3 = new DevExpress.XtraBars.Navigation.TileBarItem();
-            this.tileBarItem4 = new DevExpress.XtraBars.Navigation.TileBarItem();
-            this.tileBarItem5 = new DevExpress.XtraBars.Navigation.TileBarItem();
+            components = new System.ComponentModel.Container();
+            var tileItemElement1 = new DevExpress.XtraEditors.TileItemElement();
+            var tileItemElement2 = new DevExpress.XtraEditors.TileItemElement();
+            var tileItemElement3 = new DevExpress.XtraEditors.TileItemElement();
+            var tileItemElement4 = new DevExpress.XtraEditors.TileItemElement();
+            var tileItemElement5 = new DevExpress.XtraEditors.TileItemElement();
+            var resources = new System.ComponentModel.ComponentResourceManager(typeof(Form1));
+            tileBar1 = new DevExpress.XtraBars.Navigation.TileBar();
+            tileBarGroup2 = new DevExpress.XtraBars.Navigation.TileBarGroup();
+            tileBarItem1 = new DevExpress.XtraBars.Navigation.TileBarItem();
+            tileBarItem2 = new DevExpress.XtraBars.Navigation.TileBarItem();
+            tileBarItem3 = new DevExpress.XtraBars.Navigation.TileBarItem();
+            tileBarItem4 = new DevExpress.XtraBars.Navigation.TileBarItem();
+            tileBarItem5 = new DevExpress.XtraBars.Navigation.TileBarItem();
+            navigationFrame1 = new DevExpress.XtraBars.Navigation.NavigationFrame();
+            navigationPage1 = new DevExpress.XtraBars.Navigation.NavigationPage();
+            groupControl2 = new DevExpress.XtraEditors.GroupControl();
+            xtraScrollableControl2 = new DevExpress.XtraEditors.XtraScrollableControl();
+            labelControl2 = new DevExpress.XtraEditors.LabelControl();
+            simpleButton2 = new DevExpress.XtraEditors.SimpleButton();
+            labelControl1 = new DevExpress.XtraEditors.LabelControl();
+            listBoxControl1 = new DevExpress.XtraEditors.ListBoxControl();
+            simpleButton1 = new DevExpress.XtraEditors.SimpleButton();
+            navigationPage2 = new DevExpress.XtraBars.Navigation.NavigationPage();
+            groupControl3 = new DevExpress.XtraEditors.GroupControl();
+            xtraScrollableControl1 = new DevExpress.XtraEditors.XtraScrollableControl();
+            navigationPage3 = new DevExpress.XtraBars.Navigation.NavigationPage();
+            navigationPage4 = new DevExpress.XtraBars.Navigation.NavigationPage();
+            navigationPage5 = new DevExpress.XtraBars.Navigation.NavigationPage();
+            navigationPage6 = new DevExpress.XtraBars.Navigation.NavigationPage();
+            navigationPage7 = new DevExpress.XtraBars.Navigation.NavigationPage();
+            navigationPage8 = new DevExpress.XtraBars.Navigation.NavigationPage();
+            navigationPage9 = new DevExpress.XtraBars.Navigation.NavigationPage();
+            navigationPage10 = new DevExpress.XtraBars.Navigation.NavigationPage();
+            navigationPage11 = new DevExpress.XtraBars.Navigation.NavigationPage();
+            navigationPage12 = new DevExpress.XtraBars.Navigation.NavigationPage();
+            barManager1 = new DevExpress.XtraBars.BarManager(components);
+            bar1 = new DevExpress.XtraBars.Bar();
+            bar3 = new DevExpress.XtraBars.Bar();
+            barStaticItem1 = new DevExpress.XtraBars.BarStaticItem();
+            barDockControlTop = new DevExpress.XtraBars.BarDockControl();
+            barDockControlBottom = new DevExpress.XtraBars.BarDockControl();
+            barDockControlLeft = new DevExpress.XtraBars.BarDockControl();
+            barDockControlRight = new DevExpress.XtraBars.BarDockControl();
+            groupControl1 = new DevExpress.XtraEditors.GroupControl();
+            gridControl1 = new DevExpress.XtraGrid.GridControl();
+            eventRecordBindingSource = new System.Windows.Forms.BindingSource(components);
+            gridView1 = new DevExpress.XtraGrid.Views.Grid.GridView();
+            colType = new DevExpress.XtraGrid.Columns.GridColumn();
+            colTime = new DevExpress.XtraGrid.Columns.GridColumn();
+            colOperation = new DevExpress.XtraGrid.Columns.GridColumn();
+            colDescription = new DevExpress.XtraGrid.Columns.GridColumn();
+            repositoryItemImageComboBox1 = new DevExpress.XtraEditors.Repository.RepositoryItemImageComboBox();
+            smallImages = new DevExpress.Utils.ImageCollection(components);
+            ((System.ComponentModel.ISupportInitialize)navigationFrame1).BeginInit();
+            navigationFrame1.SuspendLayout();
+            navigationPage1.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)groupControl2).BeginInit();
+            groupControl2.SuspendLayout();
+            xtraScrollableControl2.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)listBoxControl1).BeginInit();
+            navigationPage2.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)groupControl3).BeginInit();
+            groupControl3.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)barManager1).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)groupControl1).BeginInit();
+            groupControl1.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)gridControl1).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)eventRecordBindingSource).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)gridView1).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)repositoryItemImageComboBox1).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)smallImages).BeginInit();
             this.SuspendLayout();
-            // 
-            // tileBar1
-            // 
-            this.tileBar1.AllowSelectedItem = true;
-            this.tileBar1.Dock = System.Windows.Forms.DockStyle.Left;
-            this.tileBar1.DropDownOptions.BeakColor = System.Drawing.Color.Empty;
-            this.tileBar1.Groups.Add(this.tileBarGroup2);
-            this.tileBar1.Location = new System.Drawing.Point(0, 0);
-            this.tileBar1.MaxId = 8;
-            this.tileBar1.Name = "tileBar1";
-            this.tileBar1.Orientation = System.Windows.Forms.Orientation.Vertical;
-            this.tileBar1.ScrollMode = DevExpress.XtraEditors.TileControlScrollMode.ScrollButtons;
-            this.tileBar1.Size = new System.Drawing.Size(198, 488);
-            this.tileBar1.TabIndex = 0;
-            this.tileBar1.Text = "tileBar1";
-            // 
-            // tileBarGroup2
-            // 
-            this.tileBarGroup2.Items.Add(this.tileBarItem1);
-            this.tileBarGroup2.Items.Add(this.tileBarItem2);
-            this.tileBarGroup2.Items.Add(this.tileBarItem3);
-            this.tileBarGroup2.Items.Add(this.tileBarItem4);
-            this.tileBarGroup2.Items.Add(this.tileBarItem5);
-            this.tileBarGroup2.Name = "tileBarGroup2";
-            // 
-            // tileBarItem1
-            // 
-            this.tileBarItem1.DropDownOptions.BeakColor = System.Drawing.Color.Empty;
-            tileItemElement1.Text = "tileBarItem1";
-            this.tileBarItem1.Elements.Add(tileItemElement1);
-            this.tileBarItem1.Id = 0;
-            this.tileBarItem1.ItemSize = DevExpress.XtraBars.Navigation.TileBarItemSize.Wide;
-            this.tileBarItem1.Name = "tileBarItem1";
-            // 
-            // tileBarItem2
-            // 
-            this.tileBarItem2.DropDownOptions.BeakColor = System.Drawing.Color.Empty;
-            tileItemElement2.Text = "tileBarItem2";
-            this.tileBarItem2.Elements.Add(tileItemElement2);
-            this.tileBarItem2.Id = 1;
-            this.tileBarItem2.ItemSize = DevExpress.XtraBars.Navigation.TileBarItemSize.Wide;
-            this.tileBarItem2.Name = "tileBarItem2";
-            // 
-            // tileBarItem3
-            // 
-            this.tileBarItem3.DropDownOptions.BeakColor = System.Drawing.Color.Empty;
+            tileBar1.AllowGlyphSkinning = true;
+            tileBar1.AllowSelectedItem = true;
+            tileBar1.BackColor = System.Drawing.Color.Transparent;
+            tileBar1.Dock = System.Windows.Forms.DockStyle.Top;
+            tileBar1.DropDownOptions.BeakColor = System.Drawing.Color.Empty;
+            tileBar1.Groups.Add(tileBarGroup2);
+            tileBar1.ItemImageAlignment = DevExpress.XtraEditors.TileItemContentAlignment.MiddleLeft;
+            tileBar1.ItemSize = 40;
+            tileBar1.Location = new System.Drawing.Point(0, 20);
+            tileBar1.MaxId = 8;
+            tileBar1.Name = "tileBar1";
+            tileBar1.Padding = new System.Windows.Forms.Padding(10, 0, 10, 0);
+            tileBar1.ScrollMode = DevExpress.XtraEditors.TileControlScrollMode.ScrollButtons;
+            tileBar1.SelectedItem = tileBarItem1;
+            tileBar1.SelectionBorderWidth = 2;
+            tileBar1.SelectionColorMode = DevExpress.XtraBars.Navigation.SelectionColorMode.UseItemBackColor;
+            tileBar1.ShowGroupText = false;
+            tileBar1.Size = new System.Drawing.Size(831, 62);
+            tileBar1.TabIndex = 0;
+            tileBar1.WideTileWidth = 140;
+            tileBar1.SelectedItemChanged += new DevExpress.XtraEditors.TileItemClickEventHandler(TileBar1_SelectedItemChanged);
+            tileBarGroup2.Items.Add(tileBarItem1);
+            tileBarGroup2.Items.Add(tileBarItem2);
+            tileBarGroup2.Items.Add(tileBarItem3);
+            tileBarGroup2.Items.Add(tileBarItem4);
+            tileBarGroup2.Items.Add(tileBarItem5);
+            tileBarGroup2.Name = "tileBarGroup2";
+            tileBarItem1.AllowGlyphSkinning = DevExpress.Utils.DefaultBoolean.True;
+            tileBarItem1.BackgroundImageAlignment = DevExpress.XtraEditors.TileItemContentAlignment.MiddleLeft;
+            tileBarItem1.DropDownOptions.BeakColor = System.Drawing.Color.Empty;
+            tileItemElement1.ImageOptions.ImageAlignment = DevExpress.XtraEditors.TileItemContentAlignment.MiddleLeft;
+            tileItemElement1.ImageOptions.ImageToTextAlignment = DevExpress.XtraEditors.TileControlImageToTextAlignment.Left;
+            tileItemElement1.ImageOptions.SvgImage = global::ManDroid.Properties.Resources.electronics_tabletmac;
+            tileItemElement1.Text = "Connection";
+            tileBarItem1.Elements.Add(tileItemElement1);
+            tileBarItem1.Id = 0;
+            tileBarItem1.ItemSize = DevExpress.XtraBars.Navigation.TileBarItemSize.Wide;
+            tileBarItem1.Name = "tileBarItem1";
+            tileBarItem2.DropDownOptions.BeakColor = System.Drawing.Color.Empty;
+            tileItemElement2.ImageOptions.ImageToTextAlignment = DevExpress.XtraEditors.TileControlImageToTextAlignment.Left;
+            tileItemElement2.ImageOptions.SvgImage = global::ManDroid.Properties.Resources.actions_info;
+            tileItemElement2.Text = "Information";
+            tileBarItem2.Elements.Add(tileItemElement2);
+            tileBarItem2.Id = 1;
+            tileBarItem2.ItemSize = DevExpress.XtraBars.Navigation.TileBarItemSize.Wide;
+            tileBarItem2.Name = "tileBarItem2";
+            tileBarItem3.DropDownOptions.BeakColor = System.Drawing.Color.Empty;
             tileItemElement3.Text = "tileBarItem3";
-            this.tileBarItem3.Elements.Add(tileItemElement3);
-            this.tileBarItem3.Id = 2;
-            this.tileBarItem3.ItemSize = DevExpress.XtraBars.Navigation.TileBarItemSize.Wide;
-            this.tileBarItem3.Name = "tileBarItem3";
-            // 
-            // tileBarItem4
-            // 
-            this.tileBarItem4.DropDownOptions.BeakColor = System.Drawing.Color.Empty;
+            tileBarItem3.Elements.Add(tileItemElement3);
+            tileBarItem3.Id = 2;
+            tileBarItem3.ItemSize = DevExpress.XtraBars.Navigation.TileBarItemSize.Wide;
+            tileBarItem3.Name = "tileBarItem3";
+            tileBarItem4.DropDownOptions.BeakColor = System.Drawing.Color.Empty;
             tileItemElement4.Text = "tileBarItem4";
-            this.tileBarItem4.Elements.Add(tileItemElement4);
-            this.tileBarItem4.Id = 3;
-            this.tileBarItem4.ItemSize = DevExpress.XtraBars.Navigation.TileBarItemSize.Wide;
-            this.tileBarItem4.Name = "tileBarItem4";
-            // 
-            // tileBarItem5
-            // 
-            this.tileBarItem5.DropDownOptions.BeakColor = System.Drawing.Color.Empty;
+            tileBarItem4.Elements.Add(tileItemElement4);
+            tileBarItem4.Id = 3;
+            tileBarItem4.ItemSize = DevExpress.XtraBars.Navigation.TileBarItemSize.Wide;
+            tileBarItem4.Name = "tileBarItem4";
+            tileBarItem5.DropDownOptions.BeakColor = System.Drawing.Color.Empty;
             tileItemElement5.Text = "tileBarItem5";
-            this.tileBarItem5.Elements.Add(tileItemElement5);
-            this.tileBarItem5.Id = 4;
-            this.tileBarItem5.ItemSize = DevExpress.XtraBars.Navigation.TileBarItemSize.Wide;
-            this.tileBarItem5.Name = "tileBarItem5";
-            // 
-            // Form1
-            // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
+            tileBarItem5.Elements.Add(tileItemElement5);
+            tileBarItem5.Id = 4;
+            tileBarItem5.ItemSize = DevExpress.XtraBars.Navigation.TileBarItemSize.Wide;
+            tileBarItem5.Name = "tileBarItem5";
+            navigationFrame1.Controls.Add(navigationPage1);
+            navigationFrame1.Controls.Add(navigationPage2);
+            navigationFrame1.Controls.Add(navigationPage3);
+            navigationFrame1.Controls.Add(navigationPage4);
+            navigationFrame1.Controls.Add(navigationPage5);
+            navigationFrame1.Controls.Add(navigationPage6);
+            navigationFrame1.Controls.Add(navigationPage7);
+            navigationFrame1.Controls.Add(navigationPage8);
+            navigationFrame1.Controls.Add(navigationPage9);
+            navigationFrame1.Controls.Add(navigationPage10);
+            navigationFrame1.Controls.Add(navigationPage11);
+            navigationFrame1.Controls.Add(navigationPage12);
+            navigationFrame1.Dock = System.Windows.Forms.DockStyle.Fill;
+            navigationFrame1.Location = new System.Drawing.Point(0, 82);
+            navigationFrame1.Name = "navigationFrame1";
+            navigationFrame1.Pages.AddRange(new DevExpress.XtraBars.Navigation.NavigationPageBase[] { navigationPage1, navigationPage2, navigationPage3, navigationPage4, navigationPage5, navigationPage6, navigationPage7, navigationPage8, navigationPage9, navigationPage10, navigationPage11, navigationPage12 });
+            navigationFrame1.SelectedPage = navigationPage1;
+            navigationFrame1.Size = new System.Drawing.Size(831, 350);
+            navigationFrame1.TabIndex = 8;
+            navigationFrame1.Text = "navigationFrame1";
+            navigationFrame1.TransitionAnimationProperties.FrameCount = 300;
+            navigationFrame1.TransitionType = DevExpress.Utils.Animation.Transitions.PushFade;
+            navigationPage1.Controls.Add(groupControl2);
+            navigationPage1.Name = "navigationPage1";
+            navigationPage1.Size = new System.Drawing.Size(831, 350);
+            groupControl2.CaptionImageOptions.Padding = new System.Windows.Forms.Padding(-5, 3, 3, 3);
+            groupControl2.CaptionImageOptions.SvgImage = global::ManDroid.Properties.Resources.electronics_tabletmac;
+            groupControl2.CaptionImageOptions.SvgImageSize = new System.Drawing.Size(16, 16);
+            groupControl2.CaptionLocation = DevExpress.Utils.Locations.Top;
+            groupControl2.Controls.Add(xtraScrollableControl2);
+            groupControl2.Dock = System.Windows.Forms.DockStyle.Fill;
+            groupControl2.GroupStyle = DevExpress.Utils.GroupStyle.Card;
+            groupControl2.Location = new System.Drawing.Point(0, 0);
+            groupControl2.Name = "groupControl2";
+            groupControl2.Size = new System.Drawing.Size(831, 350);
+            groupControl2.TabIndex = 0;
+            groupControl2.Text = "Device Connection";
+            xtraScrollableControl2.Controls.Add(labelControl2);
+            xtraScrollableControl2.Controls.Add(simpleButton2);
+            xtraScrollableControl2.Controls.Add(labelControl1);
+            xtraScrollableControl2.Controls.Add(listBoxControl1);
+            xtraScrollableControl2.Controls.Add(simpleButton1);
+            xtraScrollableControl2.Dock = System.Windows.Forms.DockStyle.Fill;
+            xtraScrollableControl2.Location = new System.Drawing.Point(2, 27);
+            xtraScrollableControl2.Name = "xtraScrollableControl2";
+            xtraScrollableControl2.Size = new System.Drawing.Size(827, 321);
+            xtraScrollableControl2.TabIndex = 0;
+            labelControl2.Appearance.Font = new System.Drawing.Font("Segoe UI", 18.0F);
+            labelControl2.Appearance.Options.UseFont = true;
+            labelControl2.LineLocation = DevExpress.XtraEditors.LineLocation.Bottom;
+            labelControl2.LineOrientation = DevExpress.XtraEditors.LabelLineOrientation.Horizontal;
+            labelControl2.LineVisible = true;
+            labelControl2.Location = new System.Drawing.Point(4, 4);
+            labelControl2.Name = "labelControl2";
+            labelControl2.Size = new System.Drawing.Size(202, 35);
+            labelControl2.TabIndex = 4;
+            labelControl2.Text = "Device Connection";
+            simpleButton2.Location = new System.Drawing.Point(742, 294);
+            simpleButton2.Name = "simpleButton2";
+            simpleButton2.Size = new System.Drawing.Size(75, 23);
+            simpleButton2.TabIndex = 3;
+            simpleButton2.Text = "simpleButton2";
+            simpleButton2.Click += new EventHandler(this.simpleButton2_Click);
+            labelControl1.Location = new System.Drawing.Point(721, 153);
+            labelControl1.Name = "labelControl1";
+            labelControl1.Size = new System.Drawing.Size(70, 13);
+            labelControl1.TabIndex = 2;
+            labelControl1.Text = "labelControl1";
+            listBoxControl1.Location = new System.Drawing.Point(441, 52);
+            listBoxControl1.Name = "listBoxControl1";
+            listBoxControl1.Size = new System.Drawing.Size(350, 95);
+            listBoxControl1.TabIndex = 1;
+            listBoxControl1.SelectedIndexChanged += new EventHandler(this.listBoxControl1_SelectedIndexChanged);
+            simpleButton1.Location = new System.Drawing.Point(441, 23);
+            simpleButton1.Name = "simpleButton1";
+            simpleButton1.Size = new System.Drawing.Size(102, 23);
+            simpleButton1.TabIndex = 0;
+            simpleButton1.Text = "simpleButton1";
+            simpleButton1.Click += new EventHandler(this.simpleButton1_Click);
+            navigationPage2.Controls.Add(groupControl3);
+            navigationPage2.Name = "navigationPage2";
+            navigationPage2.Size = new System.Drawing.Size(831, 350);
+            groupControl3.Controls.Add(xtraScrollableControl1);
+            groupControl3.Dock = System.Windows.Forms.DockStyle.Fill;
+            groupControl3.GroupStyle = DevExpress.Utils.GroupStyle.Card;
+            groupControl3.Location = new System.Drawing.Point(0, 0);
+            groupControl3.Name = "groupControl3";
+            groupControl3.Size = new System.Drawing.Size(831, 350);
+            groupControl3.TabIndex = 0;
+            groupControl3.Text = "groupControl3";
+            xtraScrollableControl1.Dock = System.Windows.Forms.DockStyle.Fill;
+            xtraScrollableControl1.Location = new System.Drawing.Point(2, 27);
+            xtraScrollableControl1.Name = "xtraScrollableControl1";
+            xtraScrollableControl1.Size = new System.Drawing.Size(827, 321);
+            xtraScrollableControl1.TabIndex = 0;
+            navigationPage3.Name = "navigationPage3";
+            navigationPage3.Size = new System.Drawing.Size(831, 350);
+            navigationPage4.Name = "navigationPage4";
+            navigationPage4.Size = new System.Drawing.Size(831, 350);
+            navigationPage5.Name = "navigationPage5";
+            navigationPage5.Size = new System.Drawing.Size(831, 350);
+            navigationPage6.Name = "navigationPage6";
+            navigationPage6.Size = new System.Drawing.Size(831, 350);
+            navigationPage7.Name = "navigationPage7";
+            navigationPage7.Size = new System.Drawing.Size(831, 350);
+            navigationPage8.Name = "navigationPage8";
+            navigationPage8.Size = new System.Drawing.Size(831, 350);
+            navigationPage9.Name = "navigationPage9";
+            navigationPage9.Size = new System.Drawing.Size(831, 350);
+            navigationPage10.Name = "navigationPage10";
+            navigationPage10.Size = new System.Drawing.Size(831, 350);
+            navigationPage11.Name = "navigationPage11";
+            navigationPage11.Size = new System.Drawing.Size(831, 350);
+            navigationPage12.Name = "navigationPage12";
+            navigationPage12.Size = new System.Drawing.Size(831, 350);
+            barManager1.Bars.AddRange(new DevExpress.XtraBars.Bar[] { bar1, bar3 });
+            barManager1.DockControls.Add(barDockControlTop);
+            barManager1.DockControls.Add(barDockControlBottom);
+            barManager1.DockControls.Add(barDockControlLeft);
+            barManager1.DockControls.Add(barDockControlRight);
+            barManager1.Form = this;
+            barManager1.Items.AddRange(new DevExpress.XtraBars.BarItem[] { barStaticItem1 });
+            barManager1.MaxItemId = 1;
+            barManager1.StatusBar = bar3;
+            bar1.BarName = "Tools";
+            bar1.DockCol = 0;
+            bar1.DockRow = 0;
+            bar1.DockStyle = DevExpress.XtraBars.BarDockStyle.Top;
+            bar1.FloatLocation = new System.Drawing.Point(75, 103);
+            bar1.Offset = 1;
+            bar1.Text = "Tools";
+            bar1.Visible = false;
+            bar3.BarName = "Status bar";
+            bar3.CanDockStyle = DevExpress.XtraBars.BarCanDockStyle.Bottom;
+            bar3.DockCol = 0;
+            bar3.DockRow = 0;
+            bar3.DockStyle = DevExpress.XtraBars.BarDockStyle.Bottom;
+            bar3.LinksPersistInfo.AddRange(new DevExpress.XtraBars.LinkPersistInfo[] { new DevExpress.XtraBars.LinkPersistInfo(barStaticItem1) });
+            bar3.OptionsBar.AllowQuickCustomization = false;
+            bar3.OptionsBar.DrawDragBorder = false;
+            bar3.OptionsBar.UseWholeRow = true;
+            bar3.Text = "Status bar";
+            barStaticItem1.Caption = "barStaticItem1";
+            barStaticItem1.Id = 0;
+            barStaticItem1.Name = "barStaticItem1";
+            barDockControlTop.CausesValidation = false;
+            barDockControlTop.Dock = System.Windows.Forms.DockStyle.Top;
+            barDockControlTop.Location = new System.Drawing.Point(0, 0);
+            barDockControlTop.Manager = barManager1;
+            barDockControlTop.Size = new System.Drawing.Size(831, 20);
+            barDockControlBottom.CausesValidation = false;
+            barDockControlBottom.Dock = System.Windows.Forms.DockStyle.Bottom;
+            barDockControlBottom.Location = new System.Drawing.Point(0, 597);
+            barDockControlBottom.Manager = barManager1;
+            barDockControlBottom.Size = new System.Drawing.Size(831, 24);
+            barDockControlLeft.CausesValidation = false;
+            barDockControlLeft.Dock = System.Windows.Forms.DockStyle.Left;
+            barDockControlLeft.Location = new System.Drawing.Point(0, 20);
+            barDockControlLeft.Manager = barManager1;
+            barDockControlLeft.Size = new System.Drawing.Size(0, 577);
+            barDockControlRight.CausesValidation = false;
+            barDockControlRight.Dock = System.Windows.Forms.DockStyle.Right;
+            barDockControlRight.Location = new System.Drawing.Point(831, 20);
+            barDockControlRight.Manager = barManager1;
+            barDockControlRight.Size = new System.Drawing.Size(0, 577);
+            groupControl1.CaptionImageOptions.Padding = new System.Windows.Forms.Padding(-5, 0, 3, 0);
+            groupControl1.CaptionImageOptions.SvgImage = global::ManDroid.Properties.Resources.agendaview;
+            groupControl1.CaptionImageOptions.SvgImageSize = new System.Drawing.Size(16, 16);
+            groupControl1.Controls.Add(gridControl1);
+            groupControl1.Dock = System.Windows.Forms.DockStyle.Bottom;
+            groupControl1.GroupStyle = DevExpress.Utils.GroupStyle.Card;
+            groupControl1.Location = new System.Drawing.Point(0, 432);
+            groupControl1.Name = "groupControl1";
+            groupControl1.Size = new System.Drawing.Size(831, 165);
+            groupControl1.TabIndex = 14;
+            groupControl1.Text = "Event Log";
+            gridControl1.DataSource = eventRecordBindingSource;
+            gridControl1.Dock = System.Windows.Forms.DockStyle.Fill;
+            gridControl1.Location = new System.Drawing.Point(2, 27);
+            gridControl1.MainView = gridView1;
+            gridControl1.MenuManager = barManager1;
+            gridControl1.Name = "gridControl1";
+            gridControl1.RepositoryItems.AddRange(new DevExpress.XtraEditors.Repository.RepositoryItem[] { repositoryItemImageComboBox1 });
+            gridControl1.Size = new System.Drawing.Size(827, 136);
+            gridControl1.TabIndex = 0;
+            gridControl1.ViewCollection.AddRange(new DevExpress.XtraGrid.Views.Base.BaseView[] { gridView1 });
+            eventRecordBindingSource.DataSource = typeof(EventRecord);
+            gridView1.Columns.AddRange(new DevExpress.XtraGrid.Columns.GridColumn[] { colType, colTime, colOperation, colDescription });
+            gridView1.FocusRectStyle = DevExpress.XtraGrid.Views.Grid.DrawFocusRectStyle.RowFullFocus;
+            gridView1.GridControl = gridControl1;
+            gridView1.Name = "gridView1";
+            gridView1.OptionsBehavior.AlignGroupSummaryInGroupRow = DevExpress.Utils.DefaultBoolean.False;
+            gridView1.OptionsBehavior.AllowAddRows = DevExpress.Utils.DefaultBoolean.False;
+            gridView1.OptionsBehavior.AllowDeleteRows = DevExpress.Utils.DefaultBoolean.False;
+            gridView1.OptionsBehavior.AllowFixedGroups = DevExpress.Utils.DefaultBoolean.False;
+            gridView1.OptionsBehavior.AutoSelectAllInEditor = false;
+            gridView1.OptionsBehavior.AutoUpdateTotalSummary = false;
+            gridView1.OptionsBehavior.Editable = false;
+            gridView1.OptionsBehavior.ReadOnly = true;
+            gridView1.OptionsCustomization.AllowFilter = false;
+            gridView1.OptionsCustomization.AllowGroup = false;
+            gridView1.OptionsCustomization.AllowMergedGrouping = DevExpress.Utils.DefaultBoolean.False;
+            gridView1.OptionsCustomization.AllowSort = false;
+            gridView1.OptionsNavigation.AutoFocusNewRow = true;
+            gridView1.OptionsSelection.UseIndicatorForSelection = false;
+            gridView1.OptionsView.ColumnAutoWidth = false;
+            gridView1.OptionsView.ShowGroupPanel = false;
+            gridView1.OptionsView.ShowIndicator = false;
+            gridView1.PaintStyleName = "Skin";
+            gridView1.RowHeight = 16;
+            colType.Caption = "-";
+            colType.FieldName = "Type";
+            colType.Name = "colType";
+            colType.OptionsColumn.AllowEdit = false;
+            colType.OptionsColumn.AllowFocus = false;
+            colType.OptionsColumn.AllowMove = false;
+            colType.OptionsColumn.FixedWidth = true;
+            colType.OptionsColumn.ReadOnly = true;
+            colType.Visible = true;
+            colType.VisibleIndex = 0;
+            colType.Width = 25;
+            colTime.FieldName = "Time";
+            colTime.Name = "colTime";
+            colTime.OptionsColumn.AllowEdit = false;
+            colTime.OptionsColumn.FixedWidth = true;
+            colTime.OptionsColumn.ReadOnly = true;
+            colTime.Visible = true;
+            colTime.VisibleIndex = 1;
+            colOperation.FieldName = "Operation";
+            colOperation.Name = "colOperation";
+            colOperation.OptionsColumn.AllowEdit = false;
+            colOperation.OptionsColumn.FixedWidth = true;
+            colOperation.OptionsColumn.ReadOnly = true;
+            colOperation.Visible = true;
+            colOperation.VisibleIndex = 2;
+            colOperation.Width = 128;
+            colDescription.FieldName = "Description";
+            colDescription.Name = "colDescription";
+            colDescription.OptionsColumn.AllowEdit = false;
+            colDescription.OptionsColumn.FixedWidth = true;
+            colDescription.OptionsColumn.ReadOnly = true;
+            colDescription.Visible = true;
+            colDescription.VisibleIndex = 3;
+            colDescription.Width = 536;
+            repositoryItemImageComboBox1.AutoHeight = false;
+            repositoryItemImageComboBox1.Buttons.AddRange(new DevExpress.XtraEditors.Controls.EditorButton[] { new DevExpress.XtraEditors.Controls.EditorButton(DevExpress.XtraEditors.Controls.ButtonPredefines.Combo) });
+            repositoryItemImageComboBox1.Name = "repositoryItemImageComboBox1";
+            smallImages.ImageStream = (DevExpress.Utils.ImageCollectionStreamer)resources.GetObject("smallImages.ImageStream");
+            smallImages.InsertImage(global::ManDroid.Properties.Resources.info_16x161, "Info", typeof(global::ManDroid.Properties.Resources), 0, "info_16x161");
+            smallImages.Images.SetKeyName(0, "Info");
+            smallImages.InsertImage(global::ManDroid.Properties.Resources.close_16x16, "Error", typeof(global::ManDroid.Properties.Resources), 1, "close_16x16");
+            smallImages.Images.SetKeyName(1, "Error");
+            smallImages.InsertImage(global::ManDroid.Properties.Resources.iconsetsymbols3_16x16, "Complete", typeof(global::ManDroid.Properties.Resources), 2, "iconsetsymbols3_16x16");
+            smallImages.Images.SetKeyName(2, "Complete");
+            smallImages.InsertImage(global::ManDroid.Properties.Resources.warning_16x16, "Warning", typeof(global::ManDroid.Properties.Resources), 3, "warning_16x16");
+            smallImages.Images.SetKeyName(3, "Warning");
+            smallImages.InsertImage(global::ManDroid.Properties.Resources.iconsetsigns3_16x16, "Success", typeof(global::ManDroid.Properties.Resources), 4, "iconsetsigns3_16x16");
+            smallImages.Images.SetKeyName(4, "Success");
+            smallImages.InsertImage(global::ManDroid.Properties.Resources.iconsetredtoblack4_16x16, "Fail", typeof(global::ManDroid.Properties.Resources), 5, "iconsetredtoblack4_16x16");
+            smallImages.Images.SetKeyName(5, "Fail");
+            smallImages.InsertImage(global::ManDroid.Properties.Resources.properties_16x16, "System", typeof(global::ManDroid.Properties.Resources), 6, "properties_16x16");
+            smallImages.Images.SetKeyName(6, "System");
+            smallImages.InsertImage(global::ManDroid.Properties.Resources.about_16x16, "about_16x16", typeof(global::ManDroid.Properties.Resources), 7);
+            smallImages.Images.SetKeyName(7, "about_16x16");
+            smallImages.InsertImage(global::ManDroid.Properties.Resources.phone_16x16, "Device", typeof(global::ManDroid.Properties.Resources), 8, "phone_16x16");
+            smallImages.Images.SetKeyName(8, "Device");
+            smallImages.InsertImage(global::ManDroid.Properties.Resources.add_16x16, "add_16x16", typeof(global::ManDroid.Properties.Resources), 9);
+            smallImages.Images.SetKeyName(9, "add_16x16");
+            smallImages.InsertImage(global::ManDroid.Properties.Resources.apply_16x16, "apply_16x16", typeof(global::ManDroid.Properties.Resources), 10);
+            smallImages.Images.SetKeyName(10, "apply_16x16");
+            smallImages.InsertImage(global::ManDroid.Properties.Resources.cancel_16x16, "cancel_16x16", typeof(global::ManDroid.Properties.Resources), 11);
+            smallImages.Images.SetKeyName(11, "cancel_16x16");
+            smallImages.InsertImage(global::ManDroid.Properties.Resources.changeview_16x16, "changeview_16x16", typeof(global::ManDroid.Properties.Resources), 12);
+            smallImages.Images.SetKeyName(12, "changeview_16x16");
+            smallImages.InsertImage(global::ManDroid.Properties.Resources.ide_16x16, "ide_16x16", typeof(global::ManDroid.Properties.Resources), 13);
+            smallImages.Images.SetKeyName(13, "ide_16x16");
+            smallImages.InsertImage(global::ManDroid.Properties.Resources.removepivotfield_16x16, "removepivotfield_16x16", typeof(global::ManDroid.Properties.Resources), 14);
+            smallImages.Images.SetKeyName(14, "removepivotfield_16x16");
+            smallImages.InsertImage(global::ManDroid.Properties.Resources.error_16x16, "Error2", typeof(global::ManDroid.Properties.Resources), 15, "error_16x16");
+            smallImages.Images.SetKeyName(15, "Error2");
+            this.AutoScaleDimensions = new System.Drawing.SizeF(6.0F, 13.0F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(812, 488);
-            this.Controls.Add(this.tileBar1);
+            this.ClientSize = new System.Drawing.Size(831, 621);
+            this.Controls.Add(navigationFrame1);
+            this.Controls.Add(groupControl1);
+            this.Controls.Add(tileBar1);
+            this.Controls.Add(barDockControlLeft);
+            this.Controls.Add(barDockControlRight);
+            this.Controls.Add(barDockControlBottom);
+            this.Controls.Add(barDockControlTop);
             this.Name = "Form1";
-            this.Text = "Form1";
+            this.Text = "ManDroid Toolbox v0.1";
+            this.FormClosed += new System.Windows.Forms.FormClosedEventHandler(this.Form1_FormClosed);
+            this.Load += new EventHandler(this.Form1_Load);
+            ((System.ComponentModel.ISupportInitialize)navigationFrame1).EndInit();
+            navigationFrame1.ResumeLayout(false);
+            navigationPage1.ResumeLayout(false);
+            ((System.ComponentModel.ISupportInitialize)groupControl2).EndInit();
+            groupControl2.ResumeLayout(false);
+            xtraScrollableControl2.ResumeLayout(false);
+            xtraScrollableControl2.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)listBoxControl1).EndInit();
+            navigationPage2.ResumeLayout(false);
+            ((System.ComponentModel.ISupportInitialize)groupControl3).EndInit();
+            groupControl3.ResumeLayout(false);
+            ((System.ComponentModel.ISupportInitialize)barManager1).EndInit();
+            ((System.ComponentModel.ISupportInitialize)groupControl1).EndInit();
+            groupControl1.ResumeLayout(false);
+            ((System.ComponentModel.ISupportInitialize)gridControl1).EndInit();
+            ((System.ComponentModel.ISupportInitialize)eventRecordBindingSource).EndInit();
+            ((System.ComponentModel.ISupportInitialize)gridView1).EndInit();
+            ((System.ComponentModel.ISupportInitialize)repositoryItemImageComboBox1).EndInit();
+            ((System.ComponentModel.ISupportInitialize)smallImages).EndInit();
             this.ResumeLayout(false);
-
+            this.PerformLayout();
         }
-
-        #endregion
 
         private DevExpress.XtraBars.Navigation.TileBar tileBar1;
         private DevExpress.XtraBars.Navigation.TileBarGroup tileBarGroup2;
@@ -132,6 +477,46 @@
         private DevExpress.XtraBars.Navigation.TileBarItem tileBarItem3;
         private DevExpress.XtraBars.Navigation.TileBarItem tileBarItem4;
         private DevExpress.XtraBars.Navigation.TileBarItem tileBarItem5;
+        private DevExpress.XtraBars.Navigation.NavigationFrame navigationFrame1;
+        private DevExpress.XtraBars.Navigation.NavigationPage navigationPage1;
+        private DevExpress.XtraEditors.GroupControl groupControl2;
+        private DevExpress.XtraEditors.XtraScrollableControl xtraScrollableControl2;
+        private DevExpress.XtraBars.Navigation.NavigationPage navigationPage2;
+        private DevExpress.XtraEditors.GroupControl groupControl3;
+        private DevExpress.XtraEditors.XtraScrollableControl xtraScrollableControl1;
+        private DevExpress.XtraBars.Navigation.NavigationPage navigationPage3;
+        private DevExpress.XtraBars.Navigation.NavigationPage navigationPage4;
+        private DevExpress.XtraBars.Navigation.NavigationPage navigationPage5;
+        private DevExpress.XtraBars.Navigation.NavigationPage navigationPage6;
+        private DevExpress.XtraBars.Navigation.NavigationPage navigationPage7;
+        private DevExpress.XtraBars.Navigation.NavigationPage navigationPage8;
+        private DevExpress.XtraBars.Navigation.NavigationPage navigationPage9;
+        private DevExpress.XtraBars.Navigation.NavigationPage navigationPage10;
+        private DevExpress.XtraBars.Navigation.NavigationPage navigationPage11;
+        private DevExpress.XtraBars.Navigation.NavigationPage navigationPage12;
+        private DevExpress.XtraBars.BarManager barManager1;
+        private DevExpress.XtraBars.Bar bar1;
+        private DevExpress.XtraBars.Bar bar3;
+        private DevExpress.XtraBars.BarDockControl barDockControlTop;
+        private DevExpress.XtraBars.BarDockControl barDockControlBottom;
+        private DevExpress.XtraBars.BarDockControl barDockControlLeft;
+        private DevExpress.XtraBars.BarDockControl barDockControlRight;
+        private DevExpress.XtraBars.BarStaticItem barStaticItem1;
+        private DevExpress.XtraEditors.GroupControl groupControl1;
+        private DevExpress.Utils.ImageCollection smallImages;
+        private DevExpress.XtraEditors.ListBoxControl listBoxControl1;
+        private DevExpress.XtraEditors.SimpleButton simpleButton1;
+        private DevExpress.XtraEditors.LabelControl labelControl1;
+        private DevExpress.XtraEditors.SimpleButton simpleButton2;
+        private DevExpress.XtraGrid.GridControl gridControl1;
+        private DevExpress.XtraGrid.Views.Grid.GridView gridView1;
+        private System.Windows.Forms.BindingSource eventRecordBindingSource;
+        private DevExpress.XtraGrid.Columns.GridColumn colTime;
+        private DevExpress.XtraGrid.Columns.GridColumn colOperation;
+        private DevExpress.XtraGrid.Columns.GridColumn colDescription;
+        private DevExpress.XtraGrid.Columns.GridColumn colType;
+        private DevExpress.XtraEditors.Repository.RepositoryItemImageComboBox repositoryItemImageComboBox1;
+        private DevExpress.XtraEditors.LabelControl labelControl2;
     }
 }
 
