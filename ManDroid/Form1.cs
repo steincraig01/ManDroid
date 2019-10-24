@@ -3,6 +3,16 @@ using System;
 using System.ComponentModel;
 using System.Drawing;
 using System.Management;
+using DevExpress.XtraEditors;
+using System.Linq;
+using Events;
+using DevExpress.XtraBars.Navigation;
+using DevExpress.Utils.Svg;
+using System.Collections;
+using System.Windows.Forms;
+using System.Drawing.Imaging;
+using DevExpress.Utils.Drawing;
+using System.Collections.Generic;
 
 namespace ManDroid.ManDroid
 {
@@ -11,12 +21,13 @@ namespace ManDroid.ManDroid
         public Form1()
         {
             InitializeComponent();
-            gridView1.CustomDrawCell += GridView1_CustomDrawCell;
+            //gridView1.CustomDrawCell += GridView1_CustomDrawCell;
         }
 
         private AndroidController android;
         private Device device;
         private BindingList<EventRecord> Eventlist = new BindingList<EventRecord>();
+        Dictionary<AccordionControlElement, Image> accordianImages = new Dictionary<AccordionControlElement, Image>();
 
         private void ListComDevices()
         {
@@ -47,95 +58,11 @@ namespace ManDroid.ManDroid
             managementObjectCollection.Dispose();
         }
 
-        public class GridCell
-        {
-            public int RowHandle { get; set; }
-            public string FieldName { get; set; }
-            public Image Image { get; set; }
-        }
-
-        private void GridView1_CustomDrawCell(object sender, DevExpress.XtraGrid.Views.Base.RowCellCustomDrawEventArgs e)
-        {
-            if (e.Column.FieldName == "Type")
-            {
-                switch (e.CellValue)
-                {
-                    case "Info":
-                        {
-                            e.DisplayText = string.Empty;
-                            e.Graphics.DrawImage(smallImages.Images[0], new Rectangle(e.Bounds.Right - 20, e.Bounds.Y, 16, 16));
-                            e.Handled = true;
-                            break;
-                        }
-
-                    case "Error":
-                        {
-                            e.DisplayText = string.Empty;
-                            e.Graphics.DrawImage(smallImages.Images[1], new Rectangle(e.Bounds.Right - 20, e.Bounds.Y, 16, 16));
-                            e.Handled = true;
-                            break;
-                        }
-
-                    case "Complete":
-                        {
-                            e.DisplayText = string.Empty;
-                            e.Graphics.DrawImage(smallImages.Images[2], new Rectangle(e.Bounds.Right - 20, e.Bounds.Y, 16, 16));
-                            e.Handled = true;
-                            break;
-                        }
-
-                    case "Warning":
-                        {
-                            e.DisplayText = string.Empty;
-                            e.Graphics.DrawImage(smallImages.Images[3], new Rectangle(e.Bounds.Right - 20, e.Bounds.Y, 16, 16));
-                            e.Handled = true;
-                            break;
-                        }
-
-                    case "Success":
-                        {
-                            e.DisplayText = string.Empty;
-                            e.Graphics.DrawImage(smallImages.Images[4], new Rectangle(e.Bounds.Right - 20, e.Bounds.Y, 16, 16));
-                            e.Handled = true;
-                            break;
-                        }
-
-                    case "Fail":
-                        {
-                            e.DisplayText = string.Empty;
-                            e.Graphics.DrawImage(smallImages.Images[5], new Rectangle(e.Bounds.Right - 20, e.Bounds.Y, 16, 16));
-                            e.Handled = true;
-                            break;
-                        }
-
-                    case "System":
-                        {
-                            e.DisplayText = string.Empty;
-                            e.Graphics.DrawImage(smallImages.Images[6], new Rectangle(e.Bounds.Right - 20, e.Bounds.Y, 16, 16));
-                            e.Handled = true;
-                            break;
-                        }
-
-                    case "Device":
-                        {
-                            e.DisplayText = string.Empty;
-                            e.Graphics.DrawImage(smallImages.Images[7], new Rectangle(e.Bounds.Right - 20, e.Bounds.Y, 16, 16));
-                            e.Handled = true;
-                            break;
-                        }
-                }
-            }
-        }
-
-        private void TileBar1_SelectedItemChanged(object sender, DevExpress.XtraEditors.TileItemEventArgs e)
-        {
-            navigationFrame1.SelectedPageIndex = tileBarGroup2.Items.IndexOf(e.Item);
-        }
 
         private void Form1_Load(object sender, EventArgs e)
         {
             android = AndroidController.Instance;
-            gridControl1.DataSource = Eventlist;
+            lbEvents.DataSource = Eventlist;
         }
 
         private void Form1_FormClosed(object sender, System.Windows.Forms.FormClosedEventArgs e)
@@ -161,14 +88,93 @@ namespace ManDroid.ManDroid
             }
         }
 
-        private void listBoxControl1_SelectedIndexChanged(object sender, EventArgs e)
-        {
-        }
 
         private void simpleButton2_Click(object sender, EventArgs e)
         {
-            Eventlist.Add(new EventRecord(EventType.Error, "Startup", "Starting ADB Server..."));
-            ListComDevices();
+
+            //lbEvents.Templates.Assign(lbEvents.Templates[0].Assign());
+            Eventlist.Add(new EventRecord(EventType.Error, "Startup", "Starting ADB Server...", EventListKind.Parent, svgImages.GetImage(15)));
+            //ListComDevices();
+        }
+
+        private void simpleButton3_Click(object sender, EventArgs e)
+        {
+
+            Eventlist.Add(new EventRecord(EventType.Info, "Startup", "Starting ADB Server...", EventListKind.Child, svgImages.GetImage(1)));
+        }
+
+        private void lbEvents_CustomItemTemplate(object sender, DevExpress.XtraEditors.CustomItemTemplateEventArgs e)
+        {
+            ListBoxControl lb = sender as ListBoxControl;
+            if (lb.GetItemValue(e.Index) == EventListKind.Parent)
+            {
+                e.Template = e.Templates.Where(t => t.Name == "parenttemplate").First();
+
+            }
+            else
+            {
+                e.Template = e.Templates.Where(t => t.Name == "childtemplate").First();
+            }
+        }
+
+        private void lbEvents_MeasureItem(object sender, System.Windows.Forms.MeasureItemEventArgs e)
+        {
+            ListBoxControl lb = sender as ListBoxControl;
+            if (lb.GetItemValue(e.Index) == EventListKind.Parent)
+                e.ItemHeight = 45;
+            else
+                e.ItemHeight = 25;
+        }
+
+        private void btnScan_Click(object sender, EventArgs e)
+        {
+            string serial;
+            android.UpdateDeviceList();
+            if (android.HasConnectedDevices)
+            {
+                serial = android.ConnectedDevices[0];
+                device = android.GetConnectedDevice(serial);
+                lblModel.Text = device.BuildProp.GetProp("ro.product.model");
+            }
+        }
+
+        private void listBoxControl1_SelectedIndexChanged(object sender, EventArgs e)
+        {
+            labelControl3.Text = device.BuildProp.GetProp(listBoxControl1.SelectedItem.ToString());
+        }
+
+
+        private void accordionControl1_CustomDrawElement(object sender, DevExpress.XtraBars.Navigation.CustomDrawElementEventArgs e)
+        {
+            if (e.Element.Style == ElementStyle.Group)
+            {
+                e.Handled = true;
+                int offset = -20;
+                Rectangle imageRect = e.ObjectInfo.ImageBounds;
+                imageRect.X += offset;
+                //e.DrawHeaderBackground();
+                //e.Graphics.DrawString(e.ObjectInfo.Element.Text, this.Font, Brushes.Black, textRect);
+
+                //ColorMatrix matrix = ImageColorizer.GetColorMatrix(e.ObjectInfo.PaintAppearance.ForeColor, 255);
+                //e.Cache.DrawImage(image, imageRect, 0, 0, 24,24, matrix);
+                //e.DrawExpandCollapseButton();
+                //e.DrawText();
+                e.Cache.DrawImage(accordianImages[e.ObjectInfo.Element], imageRect);
+
+
+
+
+            }
+        }
+
+        private void tbDevice_ItemClick(object sender, TileItemEventArgs e)
+        {
+            navigationFrame1.SelectedPageIndex = 0;
+        }
+
+        private void tbInfo_ItemClick(object sender, TileItemEventArgs e)
+        {
+            navigationFrame1.SelectedPageIndex = 1;
         }
     }
 }

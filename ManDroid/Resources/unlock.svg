@@ -1,0 +1,43 @@
+﻿<?xml version='1.0' encoding='UTF-8'?>
+<svg viewBox="-1.9999 -1.9999 32 32" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+  <g transform="translate(0, 0)">
+    <g transform="matrix(2.0001, 0, 0, 2.0001, 0, 0)">
+      <g transform="matrix(0.5, 0, 0, 0.5, 0, 0)">
+        <g transform="matrix(0.5833, 0, 0, 0.5833, 0, 0)">
+          <g transform="matrix(1, 0, 0, 1, 0, 0)">
+            <path d="M32, 2L16, 2C12.69, 2 10, 4.69 10, 8L10, 40C10, 43.31 12.69, 46 16, 46L32, 46C35.31, 46 38, 43.31 38, 40L38, 8C38, 4.69 35.31, 2 32, 2zM28, 42L20, 42L20, 40L28, 40L28, 42zM34.5, 36L13.5, 36L13.5, 8L34.5, 8L34.5, 36z" fill="#FFFFFF" fill-opacity="1" class="White" />
+          </g>
+        </g>
+      </g>
+    </g>
+  </g>
+  <g transform="translate(0, 0)">
+    <g transform="matrix(2.0001, 0, 0, 2.0001, 0, 0)">
+      <g transform="matrix(0.5, 0, 0, 0.5, 0, 0)">
+        <g transform="matrix(0.5833, 0, 0, 0.5833, 0, 0)">
+          <g transform="matrix(1, 0, 0, 1, 0, 0)">
+            <path d="M0, 0L48, 0L48, 48L0, 48z" fill="none" />
+          </g>
+        </g>
+      </g>
+    </g>
+  </g>
+  <g transform="translate(7.0001, 7.0001)">
+    <g transform="matrix(0.5, 0, 0, 0.5, 0, 0)">
+      <g transform="matrix(1.1667, 0, 0, 1.1667, 0, 0)">
+        <g transform="matrix(1, 0, 0, 1, 0, 0)">
+          <path d="M0, 0L24, 0L24, 24L0, 24z" fill="none" />
+        </g>
+      </g>
+    </g>
+  </g>
+  <g transform="translate(7.0001, 7.0001)">
+    <g transform="matrix(0.5, 0, 0, 0.5, 0, 0)">
+      <g transform="matrix(1.1667, 0, 0, 1.1667, 0, 0)">
+        <g transform="matrix(1, 0, 0, 1, 0, 0)">
+          <path d="M12, 17C13.1, 17 14, 16.1 14, 15C14, 13.9 13.1, 13 12, 13C10.9, 13 10, 13.9 10, 15C10, 16.1 10.9, 17 12, 17zM18, 8L17, 8L17, 6C17, 3.24 14.76, 1 12, 1C9.24, 1 7, 3.24 7, 6L8.9, 6C8.9, 4.29 10.29, 2.9 12, 2.9C13.71, 2.9 15.1, 4.29 15.1, 6L15.1, 8L6, 8C4.9, 8 4, 8.9 4, 10L4, 20C4, 21.1 4.9, 22 6, 22L18, 22C19.1, 22 20, 21.1 20, 20L20, 10C20, 8.9 19.1, 8 18, 8zM18, 20L6, 20L6, 10L18, 10L18, 20z" fill="#FFFFFF" fill-opacity="1" class="White" />
+        </g>
+      </g>
+    </g>
+  </g>
+</svg>

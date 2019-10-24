@@ -1,0 +1,25 @@
+﻿<?xml version='1.0' encoding='UTF-8'?>
+<svg viewBox="-1.9999 -1.9999 32 32" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+  <g transform="translate(0, 0)">
+    <g transform="matrix(1.9999, 0, 0, 1.9999, 0, 0)">
+      <g transform="matrix(0.5, 0, 0, 0.5, 0, 0)">
+        <g transform="matrix(1.1667, 0, 0, 1.1667, 0, 0)">
+          <g transform="matrix(1, 0, 0, 1, 0, 0)">
+            <path d="M0, 0L24, 0L24, 24L0, 24z" fill="none" />
+          </g>
+        </g>
+      </g>
+    </g>
+  </g>
+  <g transform="translate(0, 0)">
+    <g transform="matrix(1.9999, 0, 0, 1.9999, 0, 0)">
+      <g transform="matrix(0.5, 0, 0, 0.5, 0, 0)">
+        <g transform="matrix(1.1667, 0, 0, 1.1667, 0, 0)">
+          <g transform="matrix(1, 0, 0, 1, 0, 0)">
+            <path d="M12, 2C6.48, 2 2, 6.48 2, 12C2, 17.52 6.48, 22 12, 22C17.52, 22 22, 17.52 22, 12C22, 6.48 17.52, 2 12, 2zM13, 17L11, 17L11, 11L13, 11L13, 17zM13, 9L11, 9L11, 7L13, 7L13, 9z" fill="#D11C1C" fill-opacity="1" class="Red" />
+          </g>
+        </g>
+      </g>
+    </g>
+  </g>
+</svg>

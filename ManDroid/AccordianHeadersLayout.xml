@@ -1,0 +1,33 @@
+﻿<XtraSerializer version="1.0" application="Appearances">
+  <property name="AccordionControl" iskey="true" value="AccordionControl">
+    <property name="Font">Tahoma, 7.8pt</property>
+  </property>
+  <property name="Item" isnull="true" iskey="true" />
+  <property name="Group" isnull="true" iskey="true">
+    <property name="Pressed" iskey="true" value="Pressed">
+      <property name="Options" isnull="true" iskey="true">
+        <property name="UseForeColor">true</property>
+        <property name="UseFont">true</property>
+      </property>
+      <property name="ForeColor">DodgerBlue</property>
+      <property name="Font">Segoe UI, 10.2pt, style=Bold</property>
+    </property>
+    <property name="Normal" iskey="true" value="Normal">
+      <property name="Options" isnull="true" iskey="true">
+        <property name="UseForeColor">true</property>
+        <property name="UseFont">true</property>
+      </property>
+      <property name="ForeColor">DodgerBlue</property>
+      <property name="Font">Segoe UI, 10.2pt</property>
+    </property>
+    <property name="Hovered" iskey="true" value="Hovered">
+      <property name="Options" isnull="true" iskey="true">
+        <property name="UseForeColor">true</property>
+        <property name="UseFont">true</property>
+      </property>
+      <property name="ForeColor">DodgerBlue</property>
+      <property name="Font">Segoe UI, 10.2pt</property>
+    </property>
+  </property>
+  <property name="ItemWithContainer" isnull="true" iskey="true" />
+</XtraSerializer>

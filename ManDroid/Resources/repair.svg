@@ -1,0 +1,43 @@
+﻿<?xml version='1.0' encoding='UTF-8'?>
+<svg viewBox="-1.9999 -1.9999 32 32" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+  <g transform="translate(0, 0)">
+    <g transform="matrix(2.0001, 0, 0, 2.0001, 0, 0)">
+      <g transform="matrix(0.5, 0, 0, 0.5, 0, 0)">
+        <g transform="matrix(0.5833, 0, 0, 0.5833, 0, 0)">
+          <g transform="matrix(1, 0, 0, 1, 0, 0)">
+            <path d="M32, 2L16, 2C12.69, 2 10, 4.69 10, 8L10, 40C10, 43.31 12.69, 46 16, 46L32, 46C35.31, 46 38, 43.31 38, 40L38, 8C38, 4.69 35.31, 2 32, 2zM28, 42L20, 42L20, 40L28, 40L28, 42zM34.5, 36L13.5, 36L13.5, 8L34.5, 8L34.5, 36z" fill="#FFFFFF" fill-opacity="1" class="White" />
+          </g>
+        </g>
+      </g>
+    </g>
+  </g>
+  <g transform="translate(0, 0)">
+    <g transform="matrix(2.0001, 0, 0, 2.0001, 0, 0)">
+      <g transform="matrix(0.5, 0, 0, 0.5, 0, 0)">
+        <g transform="matrix(0.5833, 0, 0, 0.5833, 0, 0)">
+          <g transform="matrix(1, 0, 0, 1, 0, 0)">
+            <path d="M0, 0L48, 0L48, 48L0, 48z" fill="none" />
+          </g>
+        </g>
+      </g>
+    </g>
+  </g>
+  <g transform="translate(7.0001, 7.0001)">
+    <g transform="matrix(0.5, 0, 0, 0.5, 0, 0)">
+      <g transform="matrix(1.1667, 0, 0, 1.1667, 0, 0)">
+        <g transform="matrix(1, 0, 0, 1, 0, 0)">
+          <path d="M0, 0L24, 0L24, 24L0, 24z" fill="none" clip-rule="evenodd" />
+        </g>
+      </g>
+    </g>
+  </g>
+  <g transform="translate(7.0001, 7.0001)">
+    <g transform="matrix(0.5, 0, 0, 0.5, 0, 0)">
+      <g transform="matrix(1.1667, 0, 0, 1.1667, 0, 0)">
+        <g transform="matrix(1, 0, 0, 1, 0, 0)">
+          <path d="M22.7, 19L13.6, 9.9C14.5, 7.6 14, 4.9 12.1, 3C10.1, 1 7.1, 0.6 4.7, 1.7L9, 6L6, 9L1.6, 4.7C0.4, 7.1 0.9, 10.1 2.9, 12.1C4.8, 14 7.5, 14.5 9.8, 13.6L18.9, 22.7C19.3, 23.1 19.9, 23.1 20.3, 22.7L22.6, 20.4C23.1, 20 23.1, 19.3 22.7, 19z" fill="#FFFFFF" fill-opacity="1" class="White" />
+        </g>
+      </g>
+    </g>
+  </g>
+</svg>

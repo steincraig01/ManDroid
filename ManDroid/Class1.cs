@@ -1,22 +1,32 @@
 ﻿using System;
+using System.Drawing;
+using System.ComponentModel;
+using ManDroid.ManDroid;
 
-namespace ManDroid.ManDroid
+namespace Events
 {
+
+    //public enum Event
+
     public class EventRecord
     {
         public string Time { get; set; }
         public string Type { get; set; }
         public string Operation { get; set; }
         public string Description { get; set; }
-
-        public EventRecord(string type, string operation, string description)
+        public string EventListKind { get; set; }
+        public Image Icon { get; set; }
+        public EventRecord(string eventtype, string operation, string description, string eventlistkind, Image icon)
         {
-            Time = DateTime.Now.ToShortTimeString();
+            Time = DateTime.Now.ToLongTimeString();
             Operation = operation;
-            Type = type;
+            Type = eventtype;
             Description = description;
+            EventListKind = eventlistkind;
+            Icon = icon;
         }
     }
+
 
     public static class EventType
     {
@@ -28,6 +38,12 @@ namespace ManDroid.ManDroid
         public readonly static string Fail = "Fail";
         public readonly static string System = "System";
         public readonly static string Device = "Device";
+    }
+
+    public static class EventListKind
+    {
+        public readonly static string Parent = "Parent";
+        public readonly static string Child = "Child";
     }
 }
 
