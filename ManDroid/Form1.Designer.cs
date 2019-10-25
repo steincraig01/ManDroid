@@ -67,9 +67,15 @@ namespace ManDroid.ManDroid
             this.navigationFrame1 = new DevExpress.XtraBars.Navigation.NavigationFrame();
             this.npConnection = new DevExpress.XtraBars.Navigation.NavigationPage();
             this.groupControl2 = new DevExpress.XtraEditors.GroupControl();
-            this.xtraScrollableControl2 = new DevExpress.XtraEditors.XtraScrollableControl();
-            this.pictureEdit1 = new DevExpress.XtraEditors.PictureEdit();
+            this.groupControl4 = new DevExpress.XtraEditors.GroupControl();
+            this.labelControl8 = new DevExpress.XtraEditors.LabelControl();
+            this.labelControl7 = new DevExpress.XtraEditors.LabelControl();
+            this.labelControl6 = new DevExpress.XtraEditors.LabelControl();
+            this.labelControl5 = new DevExpress.XtraEditors.LabelControl();
+            this.labelControl4 = new DevExpress.XtraEditors.LabelControl();
+            this.labelControl2 = new DevExpress.XtraEditors.LabelControl();
             this.lblModel = new DevExpress.XtraEditors.LabelControl();
+            this.pictureEdit1 = new DevExpress.XtraEditors.PictureEdit();
             this.btnScan = new DevExpress.XtraEditors.SimpleButton();
             this.labelControl3 = new DevExpress.XtraEditors.LabelControl();
             this.simpleButton3 = new DevExpress.XtraEditors.SimpleButton();
@@ -80,7 +86,6 @@ namespace ManDroid.ManDroid
             this.simpleButton1 = new DevExpress.XtraEditors.SimpleButton();
             this.npInformation = new DevExpress.XtraBars.Navigation.NavigationPage();
             this.groupControl3 = new DevExpress.XtraEditors.GroupControl();
-            this.xtraScrollableControl1 = new DevExpress.XtraEditors.XtraScrollableControl();
             this.navigationPage3 = new DevExpress.XtraBars.Navigation.NavigationPage();
             this.navigationPage4 = new DevExpress.XtraBars.Navigation.NavigationPage();
             this.navigationPage5 = new DevExpress.XtraBars.Navigation.NavigationPage();
@@ -100,6 +105,7 @@ namespace ManDroid.ManDroid
             this.tbTweaks = new DevExpress.XtraBars.Navigation.TileBarItem();
             this.tbFlash = new DevExpress.XtraBars.Navigation.TileBarItem();
             this.svgImages = new DevExpress.Utils.SvgImageCollection(this.components);
+            this.labelControl9 = new DevExpress.XtraEditors.LabelControl();
             ((System.ComponentModel.ISupportInitialize)(this.barManager1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.repositoryItemProgressBar1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.eventRecordBindingSource)).BeginInit();
@@ -112,13 +118,13 @@ namespace ManDroid.ManDroid
             this.npConnection.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.groupControl2)).BeginInit();
             this.groupControl2.SuspendLayout();
-            this.xtraScrollableControl2.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.groupControl4)).BeginInit();
+            this.groupControl4.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureEdit1.Properties)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureEdit2.Properties)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.listBoxControl1)).BeginInit();
             this.npInformation.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.groupControl3)).BeginInit();
-            this.groupControl3.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.svgImages)).BeginInit();
             this.SuspendLayout();
             // 
@@ -403,7 +409,7 @@ namespace ManDroid.ManDroid
             this.groupControl2.CaptionImageOptions.Padding = new System.Windows.Forms.Padding(-5, 3, 3, 3);
             this.groupControl2.CaptionImageOptions.SvgImageSize = new System.Drawing.Size(16, 16);
             this.groupControl2.CaptionLocation = DevExpress.Utils.Locations.Top;
-            this.groupControl2.Controls.Add(this.xtraScrollableControl2);
+            this.groupControl2.Controls.Add(this.groupControl4);
             this.groupControl2.Dock = System.Windows.Forms.DockStyle.Fill;
             this.groupControl2.GroupStyle = DevExpress.Utils.GroupStyle.Card;
             this.groupControl2.Location = new System.Drawing.Point(0, 0);
@@ -413,29 +419,93 @@ namespace ManDroid.ManDroid
             this.groupControl2.Size = new System.Drawing.Size(635, 619);
             this.groupControl2.TabIndex = 0;
             // 
-            // xtraScrollableControl2
+            // groupControl4
             // 
-            this.xtraScrollableControl2.Controls.Add(this.pictureEdit1);
-            this.xtraScrollableControl2.Controls.Add(this.lblModel);
-            this.xtraScrollableControl2.Controls.Add(this.btnScan);
-            this.xtraScrollableControl2.Controls.Add(this.labelControl3);
-            this.xtraScrollableControl2.Controls.Add(this.simpleButton3);
-            this.xtraScrollableControl2.Controls.Add(this.pictureEdit2);
-            this.xtraScrollableControl2.Controls.Add(this.simpleButton2);
-            this.xtraScrollableControl2.Controls.Add(this.labelControl1);
-            this.xtraScrollableControl2.Controls.Add(this.listBoxControl1);
-            this.xtraScrollableControl2.Controls.Add(this.simpleButton1);
-            this.xtraScrollableControl2.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.xtraScrollableControl2.Location = new System.Drawing.Point(2, 2);
-            this.xtraScrollableControl2.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
-            this.xtraScrollableControl2.Name = "xtraScrollableControl2";
-            this.xtraScrollableControl2.Size = new System.Drawing.Size(631, 615);
-            this.xtraScrollableControl2.TabIndex = 0;
+            this.groupControl4.Controls.Add(this.labelControl9);
+            this.groupControl4.Controls.Add(this.labelControl8);
+            this.groupControl4.Controls.Add(this.labelControl7);
+            this.groupControl4.Controls.Add(this.labelControl6);
+            this.groupControl4.Controls.Add(this.labelControl5);
+            this.groupControl4.Controls.Add(this.labelControl4);
+            this.groupControl4.Controls.Add(this.labelControl2);
+            this.groupControl4.Controls.Add(this.lblModel);
+            this.groupControl4.Controls.Add(this.pictureEdit1);
+            this.groupControl4.Controls.Add(this.btnScan);
+            this.groupControl4.Controls.Add(this.labelControl3);
+            this.groupControl4.Controls.Add(this.simpleButton3);
+            this.groupControl4.Controls.Add(this.pictureEdit2);
+            this.groupControl4.Controls.Add(this.simpleButton2);
+            this.groupControl4.Controls.Add(this.labelControl1);
+            this.groupControl4.Controls.Add(this.listBoxControl1);
+            this.groupControl4.Controls.Add(this.simpleButton1);
+            this.groupControl4.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.groupControl4.GroupStyle = DevExpress.Utils.GroupStyle.Title;
+            this.groupControl4.Location = new System.Drawing.Point(2, 2);
+            this.groupControl4.Name = "groupControl4";
+            this.groupControl4.Size = new System.Drawing.Size(631, 615);
+            this.groupControl4.TabIndex = 16;
+            this.groupControl4.Text = "Connected Device";
+            // 
+            // labelControl8
+            // 
+            this.labelControl8.Location = new System.Drawing.Point(162, 195);
+            this.labelControl8.Name = "labelControl8";
+            this.labelControl8.Size = new System.Drawing.Size(108, 17);
+            this.labelControl8.TabIndex = 27;
+            this.labelControl8.Text = "Baseband Version:";
+            // 
+            // labelControl7
+            // 
+            this.labelControl7.Location = new System.Drawing.Point(162, 171);
+            this.labelControl7.Name = "labelControl7";
+            this.labelControl7.Size = new System.Drawing.Size(98, 17);
+            this.labelControl7.TabIndex = 26;
+            this.labelControl7.Text = "Android Version:";
+            // 
+            // labelControl6
+            // 
+            this.labelControl6.Location = new System.Drawing.Point(162, 147);
+            this.labelControl6.Name = "labelControl6";
+            this.labelControl6.Size = new System.Drawing.Size(83, 17);
+            this.labelControl6.TabIndex = 25;
+            this.labelControl6.Text = "Build Number:";
+            // 
+            // labelControl5
+            // 
+            this.labelControl5.Location = new System.Drawing.Point(162, 123);
+            this.labelControl5.Name = "labelControl5";
+            this.labelControl5.Size = new System.Drawing.Size(38, 17);
+            this.labelControl5.TabIndex = 24;
+            this.labelControl5.Text = "Name:";
+            // 
+            // labelControl4
+            // 
+            this.labelControl4.Location = new System.Drawing.Point(162, 76);
+            this.labelControl4.Name = "labelControl4";
+            this.labelControl4.Size = new System.Drawing.Size(37, 17);
+            this.labelControl4.TabIndex = 23;
+            this.labelControl4.Text = "Brand:";
+            // 
+            // labelControl2
+            // 
+            this.labelControl2.Location = new System.Drawing.Point(162, 99);
+            this.labelControl2.Name = "labelControl2";
+            this.labelControl2.Size = new System.Drawing.Size(41, 17);
+            this.labelControl2.TabIndex = 22;
+            this.labelControl2.Text = "Model:";
+            // 
+            // lblModel
+            // 
+            this.lblModel.Location = new System.Drawing.Point(225, 99);
+            this.lblModel.Name = "lblModel";
+            this.lblModel.Size = new System.Drawing.Size(78, 17);
+            this.lblModel.TabIndex = 21;
+            this.lblModel.Text = "labelControl4";
             // 
             // pictureEdit1
             // 
             this.pictureEdit1.EditValue = global::ManDroid.Properties.Resources.giphy1;
-            this.pictureEdit1.Location = new System.Drawing.Point(157, 201);
+            this.pictureEdit1.Location = new System.Drawing.Point(552, 431);
             this.pictureEdit1.MenuManager = this.barManager1;
             this.pictureEdit1.Name = "pictureEdit1";
             this.pictureEdit1.Properties.Appearance.BackColor = System.Drawing.Color.Transparent;
@@ -444,46 +514,38 @@ namespace ManDroid.ManDroid
             this.pictureEdit1.Properties.ShowCameraMenuItem = DevExpress.XtraEditors.Controls.CameraMenuItemVisibility.Auto;
             this.pictureEdit1.Properties.SizeMode = DevExpress.XtraEditors.Controls.PictureSizeMode.Zoom;
             this.pictureEdit1.Size = new System.Drawing.Size(58, 78);
-            this.pictureEdit1.TabIndex = 12;
-            // 
-            // lblModel
-            // 
-            this.lblModel.Location = new System.Drawing.Point(244, 171);
-            this.lblModel.Name = "lblModel";
-            this.lblModel.Size = new System.Drawing.Size(78, 17);
-            this.lblModel.TabIndex = 10;
-            this.lblModel.Text = "labelControl4";
+            this.pictureEdit1.TabIndex = 22;
             // 
             // btnScan
             // 
-            this.btnScan.Location = new System.Drawing.Point(384, 347);
+            this.btnScan.Location = new System.Drawing.Point(470, 246);
             this.btnScan.Name = "btnScan";
             this.btnScan.Size = new System.Drawing.Size(140, 33);
-            this.btnScan.TabIndex = 9;
+            this.btnScan.TabIndex = 20;
             this.btnScan.Text = "Scan for devices";
             this.btnScan.Click += new System.EventHandler(this.btnScan_Click);
             // 
             // labelControl3
             // 
-            this.labelControl3.Location = new System.Drawing.Point(10, 561);
+            this.labelControl3.Location = new System.Drawing.Point(39, 538);
             this.labelControl3.Name = "labelControl3";
             this.labelControl3.Size = new System.Drawing.Size(78, 17);
-            this.labelControl3.TabIndex = 8;
+            this.labelControl3.TabIndex = 19;
             this.labelControl3.Text = "labelControl3";
             // 
             // simpleButton3
             // 
-            this.simpleButton3.Location = new System.Drawing.Point(414, 148);
+            this.simpleButton3.Location = new System.Drawing.Point(475, 346);
             this.simpleButton3.Name = "simpleButton3";
             this.simpleButton3.Size = new System.Drawing.Size(94, 29);
-            this.simpleButton3.TabIndex = 7;
+            this.simpleButton3.TabIndex = 18;
             this.simpleButton3.Text = "simpleButton3";
             this.simpleButton3.Click += new System.EventHandler(this.simpleButton3_Click);
             // 
             // pictureEdit2
             // 
             this.pictureEdit2.EditValue = global::ManDroid.Properties.Resources.mobile_phone_popular_model_samsung_galaxy_note_svgrepo_com;
-            this.pictureEdit2.Location = new System.Drawing.Point(77, 171);
+            this.pictureEdit2.Location = new System.Drawing.Point(10, 58);
             this.pictureEdit2.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
             this.pictureEdit2.MenuManager = this.barManager1;
             this.pictureEdit2.Name = "pictureEdit2";
@@ -496,45 +558,45 @@ namespace ManDroid.ManDroid
             this.pictureEdit2.Properties.PictureInterpolationMode = System.Drawing.Drawing2D.InterpolationMode.High;
             this.pictureEdit2.Properties.ShowCameraMenuItem = DevExpress.XtraEditors.Controls.CameraMenuItemVisibility.Auto;
             this.pictureEdit2.Properties.SizeMode = DevExpress.XtraEditors.Controls.PictureSizeMode.Zoom;
-            this.pictureEdit2.Size = new System.Drawing.Size(218, 147);
-            this.pictureEdit2.TabIndex = 6;
+            this.pictureEdit2.Size = new System.Drawing.Size(175, 174);
+            this.pictureEdit2.TabIndex = 17;
             // 
             // simpleButton2
             // 
-            this.simpleButton2.Location = new System.Drawing.Point(404, 250);
+            this.simpleButton2.Location = new System.Drawing.Point(475, 381);
             this.simpleButton2.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
             this.simpleButton2.Name = "simpleButton2";
             this.simpleButton2.PaintStyle = DevExpress.XtraEditors.Controls.PaintStyles.Light;
             this.simpleButton2.Size = new System.Drawing.Size(87, 30);
-            this.simpleButton2.TabIndex = 3;
+            this.simpleButton2.TabIndex = 16;
             this.simpleButton2.Text = "simpleButton2";
             this.simpleButton2.Click += new System.EventHandler(this.simpleButton2_Click);
             // 
             // labelControl1
             // 
-            this.labelControl1.Location = new System.Drawing.Point(362, 540);
+            this.labelControl1.Location = new System.Drawing.Point(446, 538);
             this.labelControl1.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
             this.labelControl1.Name = "labelControl1";
             this.labelControl1.Size = new System.Drawing.Size(78, 17);
-            this.labelControl1.TabIndex = 2;
+            this.labelControl1.TabIndex = 15;
             this.labelControl1.Text = "labelControl1";
             // 
             // listBoxControl1
             // 
-            this.listBoxControl1.Location = new System.Drawing.Point(10, 433);
+            this.listBoxControl1.Location = new System.Drawing.Point(39, 385);
             this.listBoxControl1.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
             this.listBoxControl1.Name = "listBoxControl1";
-            this.listBoxControl1.Size = new System.Drawing.Size(408, 76);
-            this.listBoxControl1.TabIndex = 1;
+            this.listBoxControl1.Size = new System.Drawing.Size(408, 122);
+            this.listBoxControl1.TabIndex = 14;
             this.listBoxControl1.SelectedIndexChanged += new System.EventHandler(this.listBoxControl1_SelectedIndexChanged);
             // 
             // simpleButton1
             // 
-            this.simpleButton1.Location = new System.Drawing.Point(157, 517);
+            this.simpleButton1.Location = new System.Drawing.Point(241, 515);
             this.simpleButton1.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
             this.simpleButton1.Name = "simpleButton1";
             this.simpleButton1.Size = new System.Drawing.Size(119, 30);
-            this.simpleButton1.TabIndex = 0;
+            this.simpleButton1.TabIndex = 13;
             this.simpleButton1.Text = "simpleButton1";
             this.simpleButton1.Click += new System.EventHandler(this.simpleButton1_Click);
             // 
@@ -547,7 +609,6 @@ namespace ManDroid.ManDroid
             // 
             // groupControl3
             // 
-            this.groupControl3.Controls.Add(this.xtraScrollableControl1);
             this.groupControl3.Dock = System.Windows.Forms.DockStyle.Fill;
             this.groupControl3.GroupStyle = DevExpress.Utils.GroupStyle.Card;
             this.groupControl3.Location = new System.Drawing.Point(0, 0);
@@ -556,15 +617,6 @@ namespace ManDroid.ManDroid
             this.groupControl3.Size = new System.Drawing.Size(635, 619);
             this.groupControl3.TabIndex = 0;
             this.groupControl3.Text = "groupControl3";
-            // 
-            // xtraScrollableControl1
-            // 
-            this.xtraScrollableControl1.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.xtraScrollableControl1.Location = new System.Drawing.Point(2, 33);
-            this.xtraScrollableControl1.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
-            this.xtraScrollableControl1.Name = "xtraScrollableControl1";
-            this.xtraScrollableControl1.Size = new System.Drawing.Size(631, 584);
-            this.xtraScrollableControl1.TabIndex = 0;
             // 
             // navigationPage3
             // 
@@ -647,7 +699,6 @@ namespace ManDroid.ManDroid
             this.tileBar1.SelectionColor = System.Drawing.Color.DodgerBlue;
             this.tileBar1.SelectionColorMode = DevExpress.XtraBars.Navigation.SelectionColorMode.UseItemBackColor;
             this.tileBar1.ShowGroupText = false;
-            this.tileBar1.ShowItemShadow = true;
             this.tileBar1.Size = new System.Drawing.Size(1049, 100);
             this.tileBar1.TabIndex = 28;
             this.tileBar1.Text = "tileBar1";
@@ -779,6 +830,14 @@ namespace ManDroid.ManDroid
             this.svgImages.Add("upload_blue", ((DevExpress.Utils.Svg.SvgImage)(resources.GetObject("svgImages.upload_blue"))));
             this.svgImages.Add("usb_blue", ((DevExpress.Utils.Svg.SvgImage)(resources.GetObject("svgImages.usb_blue"))));
             // 
+            // labelControl9
+            // 
+            this.labelControl9.Location = new System.Drawing.Point(191, 261);
+            this.labelControl9.Name = "labelControl9";
+            this.labelControl9.Size = new System.Drawing.Size(78, 17);
+            this.labelControl9.TabIndex = 28;
+            this.labelControl9.Text = "labelControl9";
+            // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(7F, 17F);
@@ -810,14 +869,14 @@ namespace ManDroid.ManDroid
             this.npConnection.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)(this.groupControl2)).EndInit();
             this.groupControl2.ResumeLayout(false);
-            this.xtraScrollableControl2.ResumeLayout(false);
-            this.xtraScrollableControl2.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.groupControl4)).EndInit();
+            this.groupControl4.ResumeLayout(false);
+            this.groupControl4.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureEdit1.Properties)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureEdit2.Properties)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.listBoxControl1)).EndInit();
             this.npInformation.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)(this.groupControl3)).EndInit();
-            this.groupControl3.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)(this.svgImages)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
@@ -839,20 +898,8 @@ namespace ManDroid.ManDroid
         private DevExpress.XtraBars.Navigation.NavigationFrame navigationFrame1;
         private DevExpress.XtraBars.Navigation.NavigationPage npConnection;
         private DevExpress.XtraEditors.GroupControl groupControl2;
-        private DevExpress.XtraEditors.XtraScrollableControl xtraScrollableControl2;
-        private DevExpress.XtraEditors.PictureEdit pictureEdit1;
-        private DevExpress.XtraEditors.LabelControl lblModel;
-        private DevExpress.XtraEditors.SimpleButton btnScan;
-        private DevExpress.XtraEditors.LabelControl labelControl3;
-        private DevExpress.XtraEditors.SimpleButton simpleButton3;
-        private DevExpress.XtraEditors.PictureEdit pictureEdit2;
-        private DevExpress.XtraEditors.SimpleButton simpleButton2;
-        private DevExpress.XtraEditors.LabelControl labelControl1;
-        private DevExpress.XtraEditors.ListBoxControl listBoxControl1;
-        private DevExpress.XtraEditors.SimpleButton simpleButton1;
         private DevExpress.XtraBars.Navigation.NavigationPage npInformation;
         private DevExpress.XtraEditors.GroupControl groupControl3;
-        private DevExpress.XtraEditors.XtraScrollableControl xtraScrollableControl1;
         private DevExpress.XtraBars.Navigation.NavigationPage navigationPage3;
         private DevExpress.XtraBars.Navigation.NavigationPage navigationPage4;
         private DevExpress.XtraBars.Navigation.NavigationPage navigationPage5;
@@ -874,6 +921,24 @@ namespace ManDroid.ManDroid
         private DevExpress.XtraBars.Navigation.TileBarItem tbTweaks;
         private DevExpress.XtraBars.Navigation.TileBarItem tbFlash;
         private DevExpress.Utils.SvgImageCollection svgImages;
+        private DevExpress.XtraEditors.GroupControl groupControl4;
+        private DevExpress.XtraEditors.PictureEdit pictureEdit1;
+        private DevExpress.XtraEditors.LabelControl lblModel;
+        private DevExpress.XtraEditors.SimpleButton btnScan;
+        private DevExpress.XtraEditors.LabelControl labelControl3;
+        private DevExpress.XtraEditors.SimpleButton simpleButton3;
+        private DevExpress.XtraEditors.PictureEdit pictureEdit2;
+        private DevExpress.XtraEditors.SimpleButton simpleButton2;
+        private DevExpress.XtraEditors.LabelControl labelControl1;
+        private DevExpress.XtraEditors.ListBoxControl listBoxControl1;
+        private DevExpress.XtraEditors.SimpleButton simpleButton1;
+        private DevExpress.XtraEditors.LabelControl labelControl2;
+        private DevExpress.XtraEditors.LabelControl labelControl8;
+        private DevExpress.XtraEditors.LabelControl labelControl7;
+        private DevExpress.XtraEditors.LabelControl labelControl6;
+        private DevExpress.XtraEditors.LabelControl labelControl5;
+        private DevExpress.XtraEditors.LabelControl labelControl4;
+        private DevExpress.XtraEditors.LabelControl labelControl9;
     }
 }
 

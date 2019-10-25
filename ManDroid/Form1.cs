@@ -6,6 +6,7 @@ using System.Management;
 using DevExpress.XtraEditors;
 using System.Linq;
 using Events;
+using AndroidHelper;
 using DevExpress.XtraBars.Navigation;
 using DevExpress.Utils.Svg;
 using System.Collections;
@@ -135,6 +136,8 @@ namespace ManDroid.ManDroid
                 serial = android.ConnectedDevices[0];
                 device = android.GetConnectedDevice(serial);
                 lblModel.Text = device.BuildProp.GetProp("ro.product.model");
+                AdbCommand cmd = Adb.FormAdbShellCommand(device, false, "service", "call iphonesubinfo 1 | grep - o '[0-9a-f]\\{8\\} ' | tail - n + 3 | while read a; do echo - n \\u${ a: 4:4}\\u${ a: 0:4}; done");
+                labelControl9.Text = Adb.ExecuteAdbCommand(cmd,true);
             }
         }
 
